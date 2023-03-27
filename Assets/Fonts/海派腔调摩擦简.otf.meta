@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a6fd4bafc4e8f9f45963b5d5720d02fa
+timeCreated: 1528443188
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ShanghaiFace-Punk-BoldGB
+  fontNames:
+  - ShanghaiFace-Punk-BoldGB
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

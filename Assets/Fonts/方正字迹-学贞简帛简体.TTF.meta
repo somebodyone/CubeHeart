@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e238d2f2a69589d429da36a8977c35bf
+timeCreated: 1528443005
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FZZJ-XZJBJW
+  fontNames:
+  - FZZJ-XZJBJW
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
