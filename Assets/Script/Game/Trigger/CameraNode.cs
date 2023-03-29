@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DLAM
 {
-    public class CameraTrigger : MonoBehaviour
+    public class CameraNode : MonoBehaviour
     {
         public Vector3 _angle;
         public List<Stone> _stones;

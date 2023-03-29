@@ -7,7 +7,7 @@ namespace DLAM
     public class Laser : MonoBehaviour
     {
         public Transform _start;
-        public ElectRobot _end;
+        public ElectRobot endnode;
         public Transform _target;
         public Vector3 _endpos ;
         private LineRenderer _lineRenderer;
@@ -21,13 +21,13 @@ namespace DLAM
             _lineRenderer.enabled = true;
         }
 
-        public  void Update()
+        public void Update()
         {
-            if (_end != null)
+            if (endnode != null)
             {
-                float angle = GameUtlis.Angle(_start.position, _end.start.position);
+                float angle = GameUtlis.Angle(_start.position, endnode.start.position);
                 _target.localEulerAngles = new Vector3(0, 0, angle);
-                _endpos = _end.start.position;
+                _endpos = endnode.start.position;
             }
             _lineRenderer.SetPosition(0,transform.position);
             _lineRenderer.SetPosition(1,_endpos);

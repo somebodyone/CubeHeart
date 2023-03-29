@@ -15,6 +15,7 @@ namespace DLAM
 
         public void Start()
         {
+            GameManager.Instance.CheckInit();
             GameManager.Instance.EnterGame();
         }
     }
