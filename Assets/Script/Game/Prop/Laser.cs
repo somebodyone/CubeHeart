@@ -32,42 +32,5 @@ namespace DLAM
             _lineRenderer.SetPosition(0,transform.position);
             _lineRenderer.SetPosition(1,_endpos);
         }
-
-        public void OnTriggerEnter2D(Collider2D col)
-        {
-            if (col.tag == "Robot")
-            {
-                _end = col.GetComponent<ElectRobot>();
-                if (_end)
-                {
-                    _end.ShowEffect();
-                }
-            }
-        }
-
-        public void OnTriggerStay2D(Collider2D other)
-        {
-            if (_end != null) return;
-            if (other.tag == "Robot")
-            {
-                _end = other.GetComponent<ElectRobot>();
-                if (_end)
-                {
-                    _end.ShowEffect();
-                }
-            }
-        }
-
-        public void OnTriggerExit2D(Collider2D col)
-        {
-            if (col.tag == "Robot")
-            {
-                if (_end)
-                {
-                    _end.StopEffect();
-                }
-                _end = null;
-            }
-        }
     }
 }

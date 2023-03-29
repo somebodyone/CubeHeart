@@ -21,10 +21,11 @@ namespace DLAM
         private PlayerAnimationType _animationtype;
         private float _x = 0.6f;
         private int _dir = 1;
+        private float _speedscale = 1.4f;
         private bool _isground;
-        private GravityDir _gravity => GravityPresenter.Instance.GetDir();
-        
-        public  void Start()
+        private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
+
+        public void Start()
         {
             _rigidbody = transform.GetComponent<Rigidbody2D>();
             _animation = transform.GetComponentInChildren<UnityArmatureComponent>();
@@ -38,7 +39,7 @@ namespace DLAM
 
         public void UpdateGravity()
         {
-            switch (_gravity)
+            switch (_gravitydir)
             {
                 case GravityDir.Down:
                     transform.DOLocalRotate(new Vector3(0, 0, 0), 1);
@@ -105,9 +106,7 @@ namespace DLAM
                 transform.localScale = new Vector3(dir*_dir*_x, _x, _x);
             }
         }
-
-        private float _speedscale = 1.4f;
-        public  void Update()
+        public void Update()
         {
             UpdateGround();
             UpdateDir();
@@ -159,6 +158,12 @@ namespace DLAM
             }
         }
 
+        private Vector3 _oldpos;
+        public  void LateUpdate()
+        {
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
+            Camera.main.transform.DOMove(pos, 0.1f);
+        }
         private void UpdateGround()
         {
             GravityDir dir = GravityPresenter.Instance.GetDir();

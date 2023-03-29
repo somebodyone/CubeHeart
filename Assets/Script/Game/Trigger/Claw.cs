@@ -12,7 +12,9 @@ namespace DLAM
         Up,
         Collow
     }
-    
+    /// <summary>
+    /// 可移动锯齿
+    /// </summary>
     public class Claw : MonoBehaviour
     {
         public SpriteRenderer _rope;
@@ -24,10 +26,6 @@ namespace DLAM
         public float _startheight = 0.4f;
         public float _endheight = 3f;
         public float _waittime = 0;
-
-        public void Awake()
-        {
-        }
 
         public void MoveEnd()
         {

@@ -24,6 +24,7 @@ namespace DLAM
         private GameObject _game;
         private List<ElectRobot> _robots = new List<ElectRobot>();
         private Player _player;
+        private Laser _laser;
         private GameData _data => GamePresenter.Instance.GetData();
 
         public void EnterGame()
