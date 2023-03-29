@@ -1,8 +1,10 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+/Library/
+/Logs/
+/Packages/
+/UserSettings/
+/obj/
+/.idea/
+/Temp/
 /[Pp]rojectSettings/ProjectVersion.txt
 /Assets/AssetStoreTools*
  

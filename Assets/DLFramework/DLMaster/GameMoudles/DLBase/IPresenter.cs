@@ -1,21 +1,9 @@
 namespace DLBASE
 {
-    public abstract class IPresenter<T>where T:new ()
+    public abstract class IPresenter<T>: DLPresenter where T:DLPresenter
     {
-        private static T Ins;
-
-        public static T Instance
-        {
-            get
-            {
-                if (Ins == null)
-                {
-                    Ins = new T();
-                }
-
-                return Ins;
-            }
-        }
-        public abstract void OnInit();
+        private static T _instance;
+        public static T Instance => _instance ??= DLPManager.Instance.GetPresenter<T>();
+        public abstract override void OnInit();
     }
 }

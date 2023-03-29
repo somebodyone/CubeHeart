@@ -20,8 +20,12 @@ namespace DLBASE
         {
             get
             {
-                string str = PlayerPrefs.GetString(_key + data.GetType());
-                return JsonUtility.FromJson<T>(str);
+                if (PlayerPrefs.HasKey(_key+target.GetType()))
+                {
+                    string str = PlayerPrefs.GetString(_key + target.GetType());
+                    return JsonUtility.FromJson<T>(str); 
+                }
+                return target;
             }
             set
             {

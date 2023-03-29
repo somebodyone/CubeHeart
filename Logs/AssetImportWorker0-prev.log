@@ -22,104 +22,104 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51477
+60446
 Successfully changed project path to: /Users/lxw/Unity/CubeHeart/CubeHearts
 /Users/lxw/Unity/CubeHeart/CubeHearts
 Using Asset Import Pipeline V2.
-AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 60.38 ms, found 2 plugins.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 63.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.42f1c1 (b85f4368f10f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/lxw/Unity/CubeHeart/CubeHearts/Assets
 GfxDevice: creating device client; threaded=0
-2023-03-27 22:46:33.694 Unity[23592:3392202] (null) preferred device: Apple M1 Pro (high power)
-2023-03-27 22:46:33.694 Unity[23592:3392202] Metal devices available: 1
-2023-03-27 22:46:33.694 Unity[23592:3392202] 0: Apple M1 Pro (high power)
-2023-03-27 22:46:33.694 Unity[23592:3392202] Using device Apple M1 Pro (high power)
+2023-03-28 23:36:25.435 Unity[25569:3549653] (null) preferred device: Apple M1 Pro (high power)
+2023-03-28 23:36:25.435 Unity[25569:3549653] Metal devices available: 1
+2023-03-28 23:36:25.435 Unity[25569:3549653] 0: Apple M1 Pro (high power)
+2023-03-28 23:36:25.435 Unity[25569:3549653] Using device Apple M1 Pro (high power)
 Initializing Metal device caps: Apple M1 Pro
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56569
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000340 seconds.
+Registered in 0.000332 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 62.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 72.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.967 seconds
+- Completed reload, in  1.172 seconds
 Domain Reload Profiling:
-	ReloadAssembly (967ms)
-		BeginReloadAssembly (74ms)
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (805ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (1000ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (151ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (406ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (538ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (235ms)
-				ProcessInitializeOnLoadMethodAttributes (74ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (73ms)
+				BeforeProcessingInitializeOnLoad (29ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (89ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001909 seconds.
+Registered in 0.002084 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.658 seconds
+- Completed reload, in  1.904 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1660ms)
-		BeginReloadAssembly (170ms)
+	ReloadAssembly (1906ms)
+		BeginReloadAssembly (185ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (24ms)
+			DisableScriptedObjects (25ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (1424ms)
-			LoadAssemblies (137ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1646ms)
+			LoadAssemblies (152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (272ms)
+			SetupTypeCache (294ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (836ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (997ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (636ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				BeforeProcessingInitializeOnLoad (168ms)
+				ProcessInitializeOnLoadAttributes (761ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.019306 seconds.
+Validating Project structure ... 0.021756 seconds.
 
-LICENSE SYSTEM [2023327 22:46:36] Next license update check is after 2023-03-28T14:14:21
+LICENSE SYSTEM [2023328 23:36:28] Next license update check is after 2023-03-29T15:33:32
 
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.038044 seconds.
+Upgrading shader files ...0.040756 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -131,21 +131,21 @@ RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter:
 RefreshProfiler: Total: 0.000ms
 Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.42f1c1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
 Initializing Unity extensions:
-2023-03-27 22:46:37.366 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b1eed0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2023-03-27 22:46:37.369 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b16a00 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-03-28 23:36:29.367 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000201f10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-03-28 23:36:29.371 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000206a70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1992 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.4 MB.
-System memory in use after: 100.1 MB.
+Unloading 1969 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.9 MB.
+System memory in use after: 99.5 MB.
 
-Unloading 213 unused Assets to reduce memory usage. Loaded Objects now: 2468.
-Total: 2.924000 ms (FindLiveObjects: 0.095041 ms CreateObjectMapping: 0.039333 ms MarkObjects: 1.932959 ms  DeleteObjects: 0.855834 ms)
+Unloading 209 unused Assets to reduce memory usage. Loaded Objects now: 2445.
+Total: 3.494625 ms (FindLiveObjects: 0.158792 ms CreateObjectMapping: 0.046958 ms MarkObjects: 2.248292 ms  DeleteObjects: 1.039167 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,625 +159,31 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprite/Back/Level_9
-  artifactKey: Guid(1fa244bc62b8b4d49887c2069c042e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Back/Level_9 using Guid(1fa244bc62b8b4d49887c2069c042e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae275617fb3e96712e93cf20c99758f') in 0.005453 seconds 
+  path: Assets/Script/Game/Player.cs
+  artifactKey: Guid(57e9a286177496345864210a881f661a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Game/Player.cs using Guid(57e9a286177496345864210a881f661a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582aace2b9300be7815434862425ed28') in 0.187813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.771863 seconds.
+  path: Assets/Script/Main.cs
+  artifactKey: Guid(8a14671cf48d4b8283a545f5d0148d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Main.cs using Guid(8a14671cf48d4b8283a545f5d0148d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bc1466eaaee6a9f06a5a44315e6466') in 0.003355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 319.098853 seconds.
+  path: Assets/Resources/Perfabs/Level/Level_1.prefab
+  artifactKey: Guid(296dbbef954514a36b66d32dffb0ff4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Perfabs/Level/Level_1.prefab using Guid(296dbbef954514a36b66d32dffb0ff4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b290b9a8d18093b5222b6e2ad6a18f31') in 0.688490 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002040 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 22:49:09.455 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b08770 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.693 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1693ms)
-		BeginReloadAssembly (147ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (24ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1475ms)
-			LoadAssemblies (149ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (849ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (177ms)
-				ProcessInitializeOnLoadAttributes (614ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1945 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.5 MB.
-System memory in use after: 96.9 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 2.503333 ms (FindLiveObjects: 0.076541 ms CreateObjectMapping: 0.036459 ms MarkObjects: 1.832916 ms  DeleteObjects: 0.556750 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 164.432412 seconds.
-  path: Assets/Script/Game/Enemy/ElectRobot.cs
-  artifactKey: Guid(bbbda8fe3433b40b090eb3cd079acaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Enemy/ElectRobot.cs using Guid(bbbda8fe3433b40b090eb3cd079acaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7dfbce3effa69c5d271e7d29609de7a') in 0.139085 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002205 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 22:51:11.407 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b08b60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.822 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1823ms)
-		BeginReloadAssembly (157ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (27ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1597ms)
-			LoadAssemblies (157ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (949ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (179ms)
-				ProcessInitializeOnLoadAttributes (708ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1945 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.7 MB.
-System memory in use after: 178.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2474.
-Total: 2.594292 ms (FindLiveObjects: 0.097375 ms CreateObjectMapping: 0.037333 ms MarkObjects: 1.850250 ms  DeleteObjects: 0.608625 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 110.356592 seconds.
-  path: Assets/Script/Game/Enemy/ElectRobot.cs
-  artifactKey: Guid(bbbda8fe3433b40b090eb3cd079acaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Enemy/ElectRobot.cs using Guid(bbbda8fe3433b40b090eb3cd079acaf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80528f1d59783031ff5cb744f5209b9c') in 0.006293 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 181.100363 seconds.
-  path: Assets/Script/Game/Base
-  artifactKey: Guid(5bb077b77da294c70ae5d90f3bf15d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Base using Guid(5bb077b77da294c70ae5d90f3bf15d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f223d3de4f848b41ed293acda5f151') in 0.001097 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.329591 seconds.
-  path: Assets/Script/UI
-  artifactKey: Guid(fd3af62a3b1494bdd87c2562543b8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/UI using Guid(fd3af62a3b1494bdd87c2562543b8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7bcf87e05e8623709918c112f1e344') in 0.001701 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.326914 seconds.
-  path: Assets/Script/Game/RobotTrigger.cs
-  artifactKey: Guid(f65e5762f7dcf402ab0cb43ae2c89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/RobotTrigger.cs using Guid(f65e5762f7dcf402ab0cb43ae2c89892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a8c0cd4fca28b3578666a4e87e395a') in 0.001315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.996124 seconds.
-  path: Assets/Script/Game/Mgr/LevelMgr.cs
-  artifactKey: Guid(d5fd69ae9ff9e451e83b2f71a68d9d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Mgr/LevelMgr.cs using Guid(d5fd69ae9ff9e451e83b2f71a68d9d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd90dabd9050dc6fbef0129fad667c66') in 0.001392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.597436 seconds.
-  path: Assets/Script/Game/Mgr
-  artifactKey: Guid(3f61beee9c0d54e219b0bf2d748a64b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Mgr using Guid(3f61beee9c0d54e219b0bf2d748a64b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b699c19ba4bb5463847ab0c4e0430f') in 0.001783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 132.726766 seconds.
-  path: Assets/DLFramework/Modules
-  artifactKey: Guid(c00537da4bad2e446a86c06bf258196e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/Modules using Guid(c00537da4bad2e446a86c06bf258196e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd6b64dd19efa7dffe4ae6d9adc782a') in 0.001020 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.281256 seconds.
-  path: Assets/Script/UI/PassView/PassView.cs
-  artifactKey: Guid(1ee5001f1c6f9453a9abb36f5fdac6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/UI/PassView/PassView.cs using Guid(1ee5001f1c6f9453a9abb36f5fdac6b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870e5d8318abbf5281887304199bb09f') in 0.002144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.840303 seconds.
-  path: Assets/DLFramework/DLMaster
-  artifactKey: Guid(4754e4139a0dd4521a6df769732629d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster using Guid(4754e4139a0dd4521a6df769732629d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03992b7fb24b11f6c583260b71fa4a21') in 0.001552 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.264773 seconds.
-  path: Assets/DLFramework/DLMaster/UIFramwork
-  artifactKey: Guid(c284335499e2e4cc794567bfe752d6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIFramwork using Guid(c284335499e2e4cc794567bfe752d6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4441a991088d35256bda22cc87d27e96') in 0.001501 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.644189 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles
-  artifactKey: Guid(c284335499e2e4cc794567bfe752d6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles using Guid(c284335499e2e4cc794567bfe752d6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0361dc4eea78dc278cbe84469fd665') in 0.000922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.095297 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/IView.cs
-  artifactKey: Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/IView.cs using Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12537125b35910c9d6264c1f111e6ec7') in 0.001859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.600681 seconds.
-  path: Assets/DLFramework/DLMaster/DLPlayer.cs
-  artifactKey: Guid(c1856d8ffaec4063b07ecc499d6849f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/DLPlayer.cs using Guid(c1856d8ffaec4063b07ecc499d6849f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6b5d16f9c85ffa29c9226b8f78ee64') in 0.001636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 106.632929 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/IView.cs
-  artifactKey: Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/IView.cs using Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c47716db55d52cb3a08f9ac5d761c61') in 0.001039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 120.570493 seconds.
-  path: Assets/Script/Game/Contrl/GameController.cs
-  artifactKey: Guid(44ebe6676763c474caed543c96dae864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Contrl/GameController.cs using Guid(44ebe6676763c474caed543c96dae864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17af4a0c6fb5178c157a3cdf12a6db0') in 0.002120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.137721 seconds.
-  path: Assets/Script/Game/Contrl/GravityController.cs
-  artifactKey: Guid(1454603a27e70664eb0f571e1d3479b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Contrl/GravityController.cs using Guid(1454603a27e70664eb0f571e1d3479b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6bcdfe9420dafc15adb907bb5c3f54') in 0.001074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.377633 seconds.
-  path: Assets/Script/Game/Contrl/TouchController.cs
-  artifactKey: Guid(8e06d1ed1cbe9403183109156c114993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Game/Contrl/TouchController.cs using Guid(8e06d1ed1cbe9403183109156c114993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b68ada340d22fe23af240de3b94da2') in 0.002389 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 447.230891 seconds.
-  path: Assets/DLFramework/DLMaster/DLLisioner.cs
-  artifactKey: Guid(f85f8f1122144d63b155ef13eb4b7815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/DLLisioner.cs using Guid(f85f8f1122144d63b155ef13eb4b7815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fad4672f8ca6d66c3b55457b418a83') in 0.003860 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.583131 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/IView.cs
-  artifactKey: Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/IView.cs using Guid(b220c578735e64448a57124513716455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180b50869c81da4ce17758e1c2915dce') in 0.001395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.163427 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/IFView.cs
-  artifactKey: Guid(d3b0cf522cf074580bfb35e6eefbec6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/IFView.cs using Guid(d3b0cf522cf074580bfb35e6eefbec6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50048d2abe1a7d05ba89696ab23f04b5') in 0.004158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 54.468113 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/FairyGUISys.cs
-  artifactKey: Guid(288a75d99288f46668968e0daf04d139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/FairyGUISys.cs using Guid(288a75d99288f46668968e0daf04d139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351c91ea682d5282763bb7190cd973fb') in 0.002115 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002146 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 23:36:57.453 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b601c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.783 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1784ms)
-		BeginReloadAssembly (199ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (28ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1515ms)
-			LoadAssemblies (178ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (864ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (193ms)
-				ProcessInitializeOnLoadAttributes (611ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1918 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 179.4 MB.
-System memory in use after: 178.8 MB.
-
-Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 2450.
-Total: 2.635500 ms (FindLiveObjects: 0.091583 ms CreateObjectMapping: 0.037125 ms MarkObjects: 1.895750 ms  DeleteObjects: 0.610208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1596.113811 seconds.
-  path: Assets/DLFramework/DLMaster/UIMoudles/IFView.cs
-  artifactKey: Guid(d3b0cf522cf074580bfb35e6eefbec6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/UIMoudles/IFView.cs using Guid(d3b0cf522cf074580bfb35e6eefbec6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50818ab898f60dccb7c57d2c7de39c56') in 0.007453 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.287271 seconds.
-  path: Assets/DLFramework/DLMaster/Game
-  artifactKey: Guid(bd015fc3fcc124f8796925aa1a67a6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/Game using Guid(bd015fc3fcc124f8796925aa1a67a6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95560c3e058a3c7d54bcf926730402b3') in 0.001169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.544479 seconds.
-  path: Assets/DLFramework/DLMaster/GameMoudles
-  artifactKey: Guid(bd015fc3fcc124f8796925aa1a67a6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/GameMoudles using Guid(bd015fc3fcc124f8796925aa1a67a6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf621fd8a5f3478467a12064fd18737') in 0.000963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.289469 seconds.
-  path: Assets/DLFramework/DLMaster/DLSingleton.cs
-  artifactKey: Guid(06572426a814453bbf20716888974ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/DLSingleton.cs using Guid(06572426a814453bbf20716888974ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd2fcd0c5003c1ae7e70f94d45bd5d5') in 0.003190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.148191 seconds.
-  path: Assets/DLFramework/DLMaster/DLBase.cs
-  artifactKey: Guid(a176824d78da547f68a86ed820c8193c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/DLBase.cs using Guid(a176824d78da547f68a86ed820c8193c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de01444447345f3210113ae9c1bc7c37') in 0.002215 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001978 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 23:37:48.174 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b66300 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.808 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1809ms)
-		BeginReloadAssembly (151ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (27ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1587ms)
-			LoadAssemblies (150ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (936ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (196ms)
-				ProcessInitializeOnLoadAttributes (678ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1918 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 181.9 MB.
-System memory in use after: 181.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2453.
-Total: 2.559208 ms (FindLiveObjects: 0.079042 ms CreateObjectMapping: 0.036833 ms MarkObjects: 1.775209 ms  DeleteObjects: 0.667250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 46.040357 seconds.
-  path: Assets/DLFramework/DLMaster/GameMoudles/NewBehaviourScript.cs
-  artifactKey: Guid(46541dfdb6aa945e79144634e68f31a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/GameMoudles/NewBehaviourScript.cs using Guid(46541dfdb6aa945e79144634e68f31a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73816086d748c9323383a5d21274071b') in 0.006972 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001933 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 23:38:33.444 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b66290 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.798 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1799ms)
-		BeginReloadAssembly (143ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (26ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1587ms)
-			LoadAssemblies (144ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (950ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (187ms)
-				ProcessInitializeOnLoadAttributes (706ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1918 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 184.4 MB.
-System memory in use after: 183.8 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2456.
-Total: 2.537625 ms (FindLiveObjects: 0.077709 ms CreateObjectMapping: 0.037291 ms MarkObjects: 1.831792 ms  DeleteObjects: 0.590000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 18.662794 seconds.
-  path: Assets/DLFramework/DLMaster/GameMoudles/Base
-  artifactKey: Guid(acb47f579db884ed4ba6375e6dabd97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/GameMoudles/Base using Guid(acb47f579db884ed4ba6375e6dabd97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e04ec88f4a504dcf34c418ef034f17') in 0.005285 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.938226 seconds.
-  path: Assets/DLFramework/DLMaster/GameMoudles/DLBase
-  artifactKey: Guid(acb47f579db884ed4ba6375e6dabd97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DLFramework/DLMaster/GameMoudles/DLBase using Guid(acb47f579db884ed4ba6375e6dabd97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216a9537b94a1d1a4686f1c814357fac') in 0.000681 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001913 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-27 23:38:59.605 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b7b100 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Instance of CoreUtils couldn't be created because there is no script with that name.
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
-DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
-DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
-DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
-
-[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.739 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1740ms)
-		BeginReloadAssembly (143ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (26ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1530ms)
-			LoadAssemblies (140ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (278ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (903ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (184ms)
-				ProcessInitializeOnLoadAttributes (660ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1918 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 187.2 MB.
-System memory in use after: 186.6 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2459.
-Total: 2.884625 ms (FindLiveObjects: 0.093042 ms CreateObjectMapping: 0.038750 ms MarkObjects: 1.964750 ms  DeleteObjects: 0.787083 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002312 seconds.
+Registered in 0.002140 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2023-03-28 00:23:03.000 Unity[23592:3392202] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000b79f10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2023-03-28 23:44:51.457 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000020aa00 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Instance of CoreUtils couldn't be created because there is no script with that name.
 UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
 UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
@@ -790,29 +196,100 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (
 [Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.806 seconds
+- Completed reload, in  1.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1807ms)
-		BeginReloadAssembly (174ms)
+	ReloadAssembly (1871ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (27ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1562ms)
-			LoadAssemblies (153ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1633ms)
+			LoadAssemblies (152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (290ms)
+			SetupTypeCache (289ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (906ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (966ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (191ms)
-				ProcessInitializeOnLoadAttributes (657ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				BeforeProcessingInitializeOnLoad (198ms)
+				ProcessInitializeOnLoadAttributes (706ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 255.0 MB.
+System memory in use after: 254.4 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2455.
+Total: 2.940042 ms (FindLiveObjects: 0.105167 ms CreateObjectMapping: 0.038000 ms MarkObjects: 2.003208 ms  DeleteObjects: 0.792834 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002030 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-28 23:45:25.337 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000020c7e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.833 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1834ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1605ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (946ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (194ms)
+				ProcessInitializeOnLoadAttributes (692ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -823,11 +300,733 @@ Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobil
 Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 189.2 MB.
-System memory in use after: 188.7 MB.
+System memory in use before: 257.7 MB.
+System memory in use after: 257.1 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2466.
-Total: 2.578167 ms (FindLiveObjects: 0.083667 ms CreateObjectMapping: 0.037041 ms MarkObjects: 1.864584 ms  DeleteObjects: 0.592042 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2458.
+Total: 2.478583 ms (FindLiveObjects: 0.074209 ms CreateObjectMapping: 0.038125 ms MarkObjects: 1.801167 ms  DeleteObjects: 0.564250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002248 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-28 23:46:30.087 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000026b800 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.179 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2181ms)
+		BeginReloadAssembly (211ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (37ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1885ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (303ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (1156ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (226ms)
+				ProcessInitializeOnLoadAttributes (847ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 260.3 MB.
+System memory in use after: 259.7 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2461.
+Total: 3.433125 ms (FindLiveObjects: 0.210208 ms CreateObjectMapping: 0.100042 ms MarkObjects: 2.384250 ms  DeleteObjects: 0.737041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002124 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-28 23:58:59.014 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000026b3a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2045ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1799ms)
+			LoadAssemblies (172ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (1077ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (222ms)
+				ProcessInitializeOnLoadAttributes (791ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 262.7 MB.
+System memory in use after: 262.1 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2464.
+Total: 4.013208 ms (FindLiveObjects: 0.129375 ms CreateObjectMapping: 0.048042 ms MarkObjects: 3.099000 ms  DeleteObjects: 0.735333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002022 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 00:03:37.494 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000222370 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.943 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1944ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (24ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1690ms)
+			LoadAssemblies (173ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (1026ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (213ms)
+				ProcessInitializeOnLoadAttributes (748ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 265.1 MB.
+System memory in use after: 264.6 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2467.
+Total: 2.597667 ms (FindLiveObjects: 0.076041 ms CreateObjectMapping: 0.036959 ms MarkObjects: 1.883458 ms  DeleteObjects: 0.600458 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002222 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 00:04:11.230 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000221340 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.966 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1967ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1701ms)
+			LoadAssemblies (176ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (1014ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (197ms)
+				ProcessInitializeOnLoadAttributes (751ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 267.8 MB.
+System memory in use after: 267.3 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2470.
+Total: 2.715334 ms (FindLiveObjects: 0.100000 ms CreateObjectMapping: 0.043791 ms MarkObjects: 1.802292 ms  DeleteObjects: 0.768500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002049 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 00:04:47.021 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600000268540 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.884 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1885ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (24ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1650ms)
+			LoadAssemblies (187ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (280ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (964ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (217ms)
+				ProcessInitializeOnLoadAttributes (678ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.4 MB.
+System memory in use after: 269.8 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2473.
+Total: 2.626416 ms (FindLiveObjects: 0.081083 ms CreateObjectMapping: 0.038042 ms MarkObjects: 1.880625 ms  DeleteObjects: 0.625584 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002190 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 22:01:55.782 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000026a840 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.956 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1957ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1688ms)
+			LoadAssemblies (168ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (1011ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (729ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.4 MB.
+System memory in use after: 270.8 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2476.
+Total: 2.769792 ms (FindLiveObjects: 0.096542 ms CreateObjectMapping: 0.038292 ms MarkObjects: 1.957458 ms  DeleteObjects: 0.676458 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7502.396800 seconds.
+  path: Assets/DLFramework/DLMaster/GameMoudles/DLBase/DLPresenter.cs
+  artifactKey: Guid(f4b6019e2578e4e7fa4a44f96dea9bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DLFramework/DLMaster/GameMoudles/DLBase/DLPresenter.cs using Guid(f4b6019e2578e4e7fa4a44f96dea9bd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9935b2f5ee7755ca59b14c13f9edad4c') in 0.008719 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001957 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 22:02:29.794 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000002c3bf0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.905 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1906ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1678ms)
+			LoadAssemblies (159ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (992ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (201ms)
+				ProcessInitializeOnLoadAttributes (717ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1923 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 274.0 MB.
+System memory in use after: 273.4 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2480.
+Total: 2.907709 ms (FindLiveObjects: 0.092083 ms CreateObjectMapping: 0.039375 ms MarkObjects: 1.938625 ms  DeleteObjects: 0.836792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.453576 seconds.
+  path: Assets/DLFramework/DLMaster/GameMoudles/DLManager
+  artifactKey: Guid(4a79787566954816807574ed7f0d9900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DLFramework/DLMaster/GameMoudles/DLManager using Guid(4a79787566954816807574ed7f0d9900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8f7254ee91c505b78f36e7872ebca5') in 0.006149 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001932 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 22:02:45.882 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000002be6f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.832 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1833ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (27ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1612ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (967ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (194ms)
+				ProcessInitializeOnLoadAttributes (707ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1923 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.5 MB.
+System memory in use after: 275.9 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2483.
+Total: 2.802417 ms (FindLiveObjects: 0.085500 ms CreateObjectMapping: 0.038666 ms MarkObjects: 2.037542 ms  DeleteObjects: 0.639917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002143 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 22:03:00.886 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000002e7cd0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.887 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1888ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1647ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (983ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (203ms)
+				ProcessInitializeOnLoadAttributes (714ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1922 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 279.2 MB.
+System memory in use after: 278.6 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2485.
+Total: 2.775584 ms (FindLiveObjects: 0.086500 ms CreateObjectMapping: 0.041583 ms MarkObjects: 1.976083 ms  DeleteObjects: 0.670417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002085 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2023-03-29 22:17:37.011 Unity[25569:3549653] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000022aa70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Instance of CoreUtils couldn't be created because there is no script with that name.
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.ScriptableObject:CreateInstance (string) (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/ScriptableObject.bindings.cs:28)
+DynamicLight2D.CoreUtils:MainPath () (at Assets/2DDL/2DLight/Core/CoreUtils.cs:23)
+DynamicLight2D.EditorUtils:getMainRelativepath () (at Assets/2DDL/2DLight/Core/Editor/EditorUtils.cs:20)
+DynamicLight2D.DynamicLightHierarchyIcon:.cctor () (at Assets/2DDL/2DLight/Core/Editor/DynamicLightHierarchyIcon.cs:14)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:134)
+
+[Assets/2DDL/2DLight/Core/CoreUtils.cs line 23]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.997 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1999ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1727ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (1044ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (198ms)
+				ProcessInitializeOnLoadAttributes (778ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'FairyGUI/TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1924 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 281.9 MB.
+System memory in use after: 281.2 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2490.
+Total: 2.698166 ms (FindLiveObjects: 0.086458 ms CreateObjectMapping: 0.038083 ms MarkObjects: 1.938667 ms  DeleteObjects: 0.632833 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

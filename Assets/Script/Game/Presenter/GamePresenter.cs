@@ -15,6 +15,7 @@ namespace DLAM
         
         public override void OnInit()
         {
+            Debug.Log("初始化游戏类");
             _opition = DLDataManager.GetOpition<GameData>();
             _gamedata = _opition.data;
         }

@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using UnityEngine;
 
 namespace DLBASE
@@ -12,23 +14,27 @@ namespace DLBASE
             Update,
             SecondTrick
         }
-        public class Lisioner:DLLisioner
+
+        public class Lisioner : DLLisioner
         {
-            public void OnNewDay(object key,Action callback)
+            public void OnNewDay(object key, Action callback)
             {
-               Add(key,EventType.OnNewDay,callback);
+                Add(key, EventType.OnNewDay, callback);
             }
-            public void FiexdUpdate(object key,Action callback)
+
+            public void FiexdUpdate(object key, Action callback)
             {
-                Add(key,EventType.FiexdUpdate,callback);
+                Add(key, EventType.FiexdUpdate, callback);
             }
-            public void Update(object key,Action callback)
+
+            public void Update(object key, Action callback)
             {
-                Add(key,EventType.Update,callback);
+                Add(key, EventType.Update, callback);
             }
-            public void SecondTrick(object key,Action callback)
+
+            public void SecondTrick(object key, Action callback)
             {
-                Add(key,EventType.SecondTrick,callback);
+                Add(key, EventType.SecondTrick, callback);
             }
         }
 

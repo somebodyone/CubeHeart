@@ -16,7 +16,7 @@ namespace DLAM
         Down
     }
 
-    public class GravityPresenter:DLSingleton<GravityPresenter>
+    public class GravityPresenter:IPresenter<GravityPresenter>
     {
         public enum EventType
         {
@@ -34,7 +34,10 @@ namespace DLAM
         private GravityDir _dir = GravityDir.Down;
 
         public Lisioner lisioner = new Lisioner();
-        
+        public override void OnInit()
+        {
+            
+        }
         public void SetGravity(GravityDir dir)
         {
             _dir = dir;

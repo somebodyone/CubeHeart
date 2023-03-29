@@ -3,11 +3,14 @@ using DLBASE;
 
 namespace DLAM
 {
-    public class TouchPresenter:DLSingleton<TouchPresenter>
+    public class TouchPresenter:IPresenter<TouchPresenter>
     {
         private MoveDir _movedir = MoveDir.Stop;
         private bool _openskill;
-
+        public override void OnInit()
+        {
+            
+        }
         public bool OpenSkill
         {
             get => _openskill;

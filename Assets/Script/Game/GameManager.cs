@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using DLBASE;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace DLAM
 {
@@ -17,15 +20,24 @@ namespace DLAM
                 Add(key,EventType.UpdateGravity,callback);
             }
         }
-        private GameObject _game;
-        private GameData _data => GamePresenter.Instance.GetData();
         public Lisioner lisioner = new Lisioner();
+        private GameObject _game;
+        private List<ElectRobot> _robots = new List<ElectRobot>();
+        private Player _player;
+        private GameData _data => GamePresenter.Instance.GetData();
 
-        public void LoadLevel()
+        public void EnterGame()
         {
-            int level = _data.level;
-            
-            
+            ResetGame();
+            _game = Object.Instantiate(Res.Levels[_data.level]);
+            _robots = _game.GetComponentsInChildren<ElectRobot>().ToList();
+            _player = _game.GetComponentInChildren<Player>();
+        }
+        
+        public void ResetGame()
+        {
+            if(_game)Object.Destroy(_game);
+            _robots?.Clear();
         }
     }
 }

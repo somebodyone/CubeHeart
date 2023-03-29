@@ -10,6 +10,12 @@ namespace DLAM
         public void Awake()
         {
             DLPlayer.CheckInit();
+            Res.LoadRes();
+        }
+
+        public void Start()
+        {
+            GameManager.Instance.EnterGame();
         }
     }
 }
