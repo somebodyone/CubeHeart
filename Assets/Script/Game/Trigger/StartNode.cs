@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartNode : MonoBehaviour
+namespace DLAM
 {
-    // Start is called before the first frame update
-    void Start()
+    public class StartNode : MonoBehaviour,LinkInterface
     {
-        
+        public void Link()
+        {
+            
+        }
+
+        public void Disconnect()
+        {
+            
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
