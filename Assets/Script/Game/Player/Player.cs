@@ -1,4 +1,5 @@
 ﻿
+using System;
 using DG.Tweening;
 using DLBASE;
 using DragonBones;
@@ -24,6 +25,7 @@ namespace DLAM
         private float _speedscale = 1.4f;
         private bool _isground;
         private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
+        private Vector3 _gravity => GravityPresenter.Instance.GetGravity();
 
         public void Start()
         {
@@ -158,6 +160,11 @@ namespace DLAM
             }
         }
 
+        public void FixedUpdate()
+        {
+            _rigidbody.AddForce(_gravity*_rigidbody.mass); 
+        }
+
         private Vector3 _oldpos;
         public  void LateUpdate()
         {
@@ -185,6 +192,11 @@ namespace DLAM
             }
 
             _isground = GameUtlis.RayCastTarget(transform.position, vector);
+        }
+
+        public void OnDestroy()
+        {
+            GravityPresenter.Instance.lisioner.Remove(this);
         }
     }
 }

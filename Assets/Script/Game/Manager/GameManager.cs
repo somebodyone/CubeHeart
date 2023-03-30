@@ -24,8 +24,11 @@ namespace DLAM
         private GameObject _game;
         private ElectRobot[] _robots;
         private Player _player;
-        private Laser _laser;
+        private StartNode _startnode;
         private EndNode _endnode;
+        private LineRenderer _line;
+        private List<ElectRobot> _robotlist = new List<ElectRobot>();
+        private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
 
         public void CheckInit()
@@ -40,29 +43,96 @@ namespace DLAM
             _robots = _game.GetComponentsInChildren<ElectRobot>();
             _player = _game.GetComponentInChildren<Player>();
             _endnode = _game.GetComponentInChildren<EndNode>();
+            _startnode = _game.GetComponentInChildren<StartNode>();
+            _line = _game.GetComponentInChildren<LineRenderer>();
         }
 
         private void UpdateGame()
         {
-            float mindistance = 5;
-            for (int i = 0; i < _robots.Length; i++)
+            _robotlist.Clear();
+            _nodelist.Clear();
+            for (int i = 0; i < _robotlist.Count; i++)
             {
-                float distance = Vector3.Distance(_robots[i].transform.position, _laser.transform.position);
-                if (distance < 5)
+                _robotlist[i].ClosePower();
+            }
+            _nodelist.Add(_startnode.transform);
+            LineRobotNode(_startnode.transform);
+            LineEndNode();
+            _line.positionCount = _nodelist.Count;
+            _line.SetPosition(0,_startnode.transform.position);
+            for (int i = 1; i < _nodelist.Count; i++)
+            {
+                ElectRobot robot = _nodelist[i].GetComponent<ElectRobot>();
+                if (robot)
                 {
-                    if (distance < mindistance)
-                    {
-                        _laser.endnode = _robots[i];
-                        mindistance = distance;
-                    }
+                    robot.ShowPower();
+                    _line.SetPosition(i,robot.start.position);
+                }
+                else
+                {
+                    _line.SetPosition(i,_nodelist[i].position);
                 }
             }
         }
-        
+
+        /// <summary>
+        /// 链接最终节点
+        /// </summary>
+        private void LineEndNode()
+        {
+            if (_robotlist.Count <= 0) return;
+            float distance = Vector3.Distance(_robotlist[_robotlist.Count-1].transform.position, _endnode.transform.position);
+            if (distance < 10)
+            {
+                _nodelist.Add(_endnode.transform);
+            }
+        }
+
+        private void LineRobotNode(Transform startnode)
+        {
+            float mindistance = 10;
+            ElectRobot node = null;
+            for (int i = 0; i < _robots.Length; i++)
+            {
+                if(IsHaveNode(_robots[i]))continue;
+                float distance = Vector3.Distance(_robots[i].transform.position, startnode.position);
+                if (distance < mindistance)
+                {
+                    mindistance = distance;
+                    node = _robots[i];
+                }
+            }
+
+            if (node)
+            {
+                _robotlist.Add(node);
+                _nodelist.Add(node.transform);
+                LineRobotNode(node.transform);
+            }
+        }
+
+        private bool IsHaveNode(ElectRobot node)
+        {
+            for (int i = 0; i < _robotlist.Count; i++)
+            {
+                if (_robotlist[i] == node)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public void ResetGame()
         {
             if(_game)Object.Destroy(_game);
             _robots = null;
+        }
+
+        public void EndGame()
+        {
+            EnterGame();
         }
     }
 }

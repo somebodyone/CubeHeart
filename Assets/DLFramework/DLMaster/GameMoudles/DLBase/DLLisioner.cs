@@ -61,12 +61,9 @@ namespace DLBASE
         {
             foreach (var items in _callback.Keys)
             {
-                foreach (var it in _callback[items].Keys)
+                if (_callback[items].ContainsKey(key))
                 {
-                    if (_callback[items].ContainsKey(key))
-                    {
-                        _callback[items].Remove(key);
-                    }
+                    _callback[items].Remove(key);
                 }
             }
         }

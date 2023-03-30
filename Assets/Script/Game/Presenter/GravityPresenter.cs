@@ -56,8 +56,6 @@ namespace DLAM
                     _gravity = new Vector3(10, 0, 0);
                     break;
             }
-
-            Physics2D.gravity = _gravity;
             lisioner.Emit(EventType.UpdateGravity);
         }
 
