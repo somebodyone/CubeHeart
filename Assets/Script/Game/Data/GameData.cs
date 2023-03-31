@@ -9,6 +9,7 @@ namespace DLAM
     public class GameData
     {
         public int level;
+        public bool newplayer;
     }
 }
 

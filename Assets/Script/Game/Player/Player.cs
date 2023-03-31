@@ -24,7 +24,7 @@ namespace DLAM
         private int _dir = 1;
         private float _speedscale = 1.4f;
         private bool _isground;
-        private bool _isgameover;
+        private bool _ispause = true;
         private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
         private Vector3 _gravity => GravityPresenter.Instance.GetGravity();
 
@@ -38,6 +38,13 @@ namespace DLAM
             {
                 UpdateGravity();
             });
+        }
+
+        public void StartGame()
+        {
+            _ispause = false;
+            _rigidbody.isKinematic = false;
+            gameObject.SetActive(true);
         }
 
         public void UpdateGravity()
@@ -111,7 +118,7 @@ namespace DLAM
         }
         public void Update()
         {
-            if(_isgameover)return;
+            if(_ispause)return;
             UpdateGround();
             UpdateDir();
             if(!_isground)return;
@@ -198,7 +205,7 @@ namespace DLAM
 
         public void EndGame()
         {
-            _isgameover = true;
+            _ispause = true;
             _rigidbody.isKinematic = true;
             _rigidbody.velocity = Vector3.zero;
             transform.DOMoveY(transform.position.y+6, 7).SetEase(Ease.InQuad);

@@ -37,7 +37,7 @@ namespace DLAM
             DLPlayer.lisioner.Update(this, UpdateGame);
         }
         
-        public void EnterGame()
+        public void LoadGame()
         {
             ResetGame();
             _game = Object.Instantiate(Res.Levels[_data.level]);
@@ -49,8 +49,15 @@ namespace DLAM
             _passnode = _game.GetComponentInChildren<PassNode>();
         }
 
+        public void StartGame()
+        {
+            GameConfig.GameProgression = GameProgression.GameIng;
+            _player.StartGame();
+        }
+
         private void UpdateGame()
         {
+            if (_startnode == null) return;
             _robotlist.Clear();
             _nodelist.Clear();
             _nodelist.Add(_startnode.transform);
@@ -177,7 +184,9 @@ namespace DLAM
 
         public void EndGame()
         {
-            EnterGame();
+            GameConfig.GameProgression = GameProgression.Stop;
+            LoadGame();
+            GamePresenter.Instance.NewGame = false;
         }
     }
 }

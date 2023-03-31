@@ -17,7 +17,8 @@ namespace DLAM
         {
             Physics2D.gravity = Vector3.zero;
             GameManager.Instance.CheckInit();
-            GameManager.Instance.EnterGame();
+            GameManager.Instance.LoadGame();
+            DLDialogManager.Instance.OpenView<MainView>();
         }
     }
 }

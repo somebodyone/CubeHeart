@@ -6,22 +6,39 @@ using DLBASE;
 
 namespace DLAM
 {
+    public enum GameProgression
+    {
+        Stop,
+        GameIng
+    }
+    
     public class GamePresenter:IPresenter<GamePresenter>
     {
         private Transform _parent;
         private GameObject _level;
         private DLOpition<GameData> _opition;
-        private GameData _gamedata;
-        
+        private GameData _data;
+
         public override void OnInit()
         {
             _opition = DLDataManager.GetOpition<GameData>();
-            _gamedata = _opition.data;
+            _data = _opition.data;
+        }
+
+        public int Level => _data.level;
+
+        public bool NewGame
+        {
+            get => _data.newplayer;
+            set
+            {
+                _data.newplayer = value;
+            }
         }
 
         public GameData GetData()
         {
-            return _gamedata;
+            return _data;
         }
     }
 }
