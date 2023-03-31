@@ -5,14 +5,27 @@ using DLBASE;
 
 namespace DLAM
 {
-    public class PassNode : Organ
+    public class PassNode : MonoBehaviour,LinkInterface
     {
+        public List<Transform> _pos;
+
+        public GameObject _light;
         public void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Player")
             {
-                Debug.Log("游戏通关");
+                
             }
+        }
+
+        public void Link()
+        {
+            _light.SetActive(true);
+        }
+
+        public void Disconnect()
+        {
+            _light.SetActive(false);
         }
     }
 }

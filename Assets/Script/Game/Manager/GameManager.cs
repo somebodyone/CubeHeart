@@ -27,7 +27,7 @@ namespace DLAM
         private StartNode _startnode;
         private EndNode _endnode;
         private LineRenderer _line;
-        private ElectLadder _electLadder;
+        private PassNode _passnode;
         private List<ElectRobot> _robotlist = new List<ElectRobot>();
         private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
@@ -46,7 +46,7 @@ namespace DLAM
             _endnode = _game.GetComponentInChildren<EndNode>();
             _startnode = _game.GetComponentInChildren<StartNode>();
             _line = _game.GetComponentInChildren<LineRenderer>();
-            _electLadder = _game.GetComponentInChildren<ElectLadder>();
+            _passnode = _game.GetComponentInChildren<PassNode>();
         }
 
         private void UpdateGame()
@@ -56,9 +56,9 @@ namespace DLAM
             _nodelist.Add(_startnode.transform);
             LineRobotNode(_startnode.transform);
             LineEndNode();
-            if (_robotlist.Count > 0)
+            if (_nodelist.Count > 1)
             {
-                _startnode._endnode = _robotlist[0];
+                _startnode._endnode = _nodelist[1];
             }
             else
             {
@@ -81,7 +81,7 @@ namespace DLAM
                 if (endnode)
                 {
                     endnode.Link();
-                    _electLadder.Link();
+                    _passnode.Link();
                 }
                 if (robot)
                 {
@@ -100,13 +100,28 @@ namespace DLAM
         /// </summary>
         private void LineEndNode()
         {
+            float distance = 0;
+            if (_robots.Length <= 0)
+            {
+                distance = Vector3.Distance(_startnode.transform.position, _endnode.transform.position);
+                if (distance < 10)
+                {
+                    _nodelist.Add(_endnode.transform);
+                }
+                else
+                {
+                    _endnode.Disconnect();
+                    _passnode.Disconnect();
+                }
+                return;
+            }
             if (_robotlist.Count <= 0)
             {
                 _endnode.Disconnect();
-                _electLadder.Disconnect();
+                _passnode.Disconnect();
                 return;
             }
-            float distance = Vector3.Distance(_robotlist[_robotlist.Count-1].transform.position, _endnode.transform.position);
+            distance = Vector3.Distance(_robotlist[_robotlist.Count-1].transform.position, _endnode.transform.position);
             if (distance < 10)
             {
                 _nodelist.Add(_endnode.transform);
@@ -114,7 +129,7 @@ namespace DLAM
             else
             {
                 _endnode.Disconnect();
-                _electLadder.Disconnect();
+                _passnode.Disconnect();
             }
         }
 
