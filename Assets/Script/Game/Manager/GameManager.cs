@@ -56,12 +56,20 @@ namespace DLAM
             _nodelist.Add(_startnode.transform);
             LineRobotNode(_startnode.transform);
             LineEndNode();
+            if (_robotlist.Count > 0)
+            {
+                _startnode._endnode = _robotlist[0];
+            }
+            else
+            {
+                _startnode._endnode = null;
+            }
             for (int i = 0; i < _robots.Length; i++)
             {
                 ElectRobot robot = _robots[i];
                 if (!IsHaveNode(robot))
                 {
-                    _robots[i].Disconnect();
+                    _robots[i].Disconnect(); 
                 }
             }
             _line.positionCount = _nodelist.Count;
