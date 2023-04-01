@@ -4,6 +4,7 @@ using DG.Tweening;
 using DLBASE;
 using DragonBones;
 using UnityEngine;
+using Transform = DragonBones.Transform;
 
 namespace DLAM
 {
@@ -16,7 +17,10 @@ namespace DLAM
     
     public class Player : MonoBehaviour
     {
+        public float _start;
+
         private Rigidbody2D _rigidbody;
+        private BoxCollider2D _boxCollider;
         private UnityArmatureComponent _animation;
         private float _speed = 4;
         private PlayerAnimationType _animationtype;
@@ -30,7 +34,6 @@ namespace DLAM
 
         public void Start()
         {
-            _rigidbody = transform.GetComponent<Rigidbody2D>();
             _animation = transform.GetComponentInChildren<UnityArmatureComponent>();
             _animation.animation.Play("idle");
             _animationtype = PlayerAnimationType.Idle;
@@ -42,6 +45,9 @@ namespace DLAM
 
         public void StartGame()
         {
+            _rigidbody = transform.GetComponent<Rigidbody2D>();
+            _boxCollider = transform.GetComponent<BoxCollider2D>();
+            _boxCollider.enabled = true;
             _ispause = false;
             _rigidbody.isKinematic = false;
             gameObject.SetActive(true);
@@ -171,7 +177,7 @@ namespace DLAM
 
         public void FixedUpdate()
         {
-            _rigidbody.AddForce(_gravity*_rigidbody.mass); 
+            _rigidbody?.AddForce(_gravity*_rigidbody.mass); 
         }
 
         private Vector3 _oldpos;
@@ -207,8 +213,13 @@ namespace DLAM
         {
             _ispause = true;
             _rigidbody.isKinematic = true;
+            _boxCollider.enabled = false;
             _rigidbody.velocity = Vector3.zero;
-            transform.DOMoveY(transform.position.y+6, 7).SetEase(Ease.InQuad);
+        }
+
+        public Vector3 Position
+        {
+            set => transform.position = value;
         }
         
         public void OnDestroy()

@@ -25,15 +25,10 @@ namespace DLAM
             _data = _opition.data;
         }
 
-        public int Level => _data.level;
-
-        public bool NewGame
+        public void SetNextLevel()
         {
-            get => _data.newplayer;
-            set
-            {
-                _data.newplayer = value;
-            }
+            _data.level++;
+            _opition.SetDirty(true);
         }
 
         public GameData GetData()

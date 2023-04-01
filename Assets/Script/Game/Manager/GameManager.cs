@@ -22,12 +22,15 @@ namespace DLAM
         }
         public Lisioner lisioner = new Lisioner();
         private GameObject _game;
+        public Dictionary<int, GameObject> _gamedic = new Dictionary<int, GameObject>();
+        private GameObject _homepage;
         private ElectRobot[] _robots;
         private Player _player;
         private StartNode _startnode;
         private EndNode _endnode;
         private LineRenderer _line;
         private PassNode _passnode;
+        private PlayerNode _playerNode;
         private List<ElectRobot> _robotlist = new List<ElectRobot>();
         private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
@@ -36,17 +39,40 @@ namespace DLAM
         {
             DLPlayer.lisioner.Update(this, UpdateGame);
         }
-        
-        public void LoadGame()
+
+        public void LoadHomePage()
         {
             ResetGame();
+            _homepage = Object.Instantiate(Res.HomePage);
+        }
+        
+        public void LoadGame(Vector3 vector)
+        {
             _game = Object.Instantiate(Res.Levels[_data.level]);
+            _game.transform.position = vector;
+            _gamedic[_data.level] = _game;
             _robots = _game.GetComponentsInChildren<ElectRobot>();
             _player = _game.GetComponentInChildren<Player>();
             _endnode = _game.GetComponentInChildren<EndNode>();
             _startnode = _game.GetComponentInChildren<StartNode>();
             _line = _game.GetComponentInChildren<LineRenderer>();
             _passnode = _game.GetComponentInChildren<PassNode>();
+            _playerNode = _game.GetComponentInChildren<PlayerNode>();
+        }
+
+        public void RemoveLastGame()
+        {
+            if (_gamedic.ContainsKey(_data.level - 1))
+            {
+                Object.Destroy(_gamedic[_data.level-1]);
+                _gamedic.Remove(_data.level - 1);
+            }
+        }
+
+        public void LoadPlayer()
+        {
+            _player = Object.Instantiate(Res.Player).GetComponent<Player>();
+            _player.Position = _playerNode.transform.position;
         }
 
         public void StartGame()
@@ -179,14 +205,8 @@ namespace DLAM
         public void ResetGame()
         {
             if(_game)Object.Destroy(_game);
+            if(_homepage)Object.Destroy(_homepage);
             _robots = null;
-        }
-
-        public void EndGame()
-        {
-            GameConfig.GameProgression = GameProgression.Stop;
-            LoadGame();
-            GamePresenter.Instance.NewGame = false;
         }
     }
 }

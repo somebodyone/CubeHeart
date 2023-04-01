@@ -18,9 +18,6 @@ namespace DLAM
             if (col.transform.tag == "Player")
             {
                 col.transform.position = _midpos.transform.position;
-                transform.DOMoveY(transform.position.y+6, 7).SetEase(Ease.InQuad);
-                Player player = col.GetComponent<Player>();
-                player.EndGame();
             }
         }
 

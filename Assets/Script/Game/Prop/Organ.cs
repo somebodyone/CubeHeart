@@ -11,7 +11,9 @@ namespace DLAM
         {
             if (col.transform.tag == "Player")
             {
-                GameManager.Instance.EndGame();
+                GameManager.Instance.ResetGame();
+                GameManager.Instance.LoadGame(Vector3.zero);
+                GameManager.Instance.StartGame();
             }
         }
     }
