@@ -31,6 +31,15 @@ namespace DLAM
             _opition.SetDirty(true);
         }
 
+        public int Level
+        {
+            get => _data.level;
+            set
+            {
+                _data.level = value;
+            }
+        }
+
         public GameData GetData()
         {
             return _data;

@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using DLBASE;
-using UnityEngine;
 using FairyGUI;
 
 namespace DLAM
@@ -28,14 +25,14 @@ namespace DLAM
         {
             _test.onClick.Add(() =>
             {
-                
+                DLDialogManager.Instance.OpenView<TestView>();
             });
             
             _start.onClick.Add(() =>
             {
                 GameManager.Instance.CheckInit();
                 GameManager.Instance.ResetGame();
-                GameManager.Instance.LoadGame(Vector3.zero);
+                GameManager.Instance.LoadGame();
                 GameManager.Instance.LoadPlayer();
                 GameManager.Instance.StartGame();
                 _controller.SetSelectedPage("gameing");

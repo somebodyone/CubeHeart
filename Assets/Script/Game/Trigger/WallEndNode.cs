@@ -17,7 +17,6 @@ namespace DLAM
         {
             if (col.transform.tag == "Player")
             {
-
             }
         }
 
@@ -25,10 +24,14 @@ namespace DLAM
         {
             if (other.transform.tag == "Player")
             {
-                _boxCollider2D.isTrigger = false;
-                other.GetComponent<Player>().StartGame();
+                GameManager.Instance.StartGame();
                 GameManager.Instance.RemoveLastGame();
             }
+        }
+
+        public void StartGame()
+        {
+            _boxCollider2D.isTrigger = false;
         }
     }
 }

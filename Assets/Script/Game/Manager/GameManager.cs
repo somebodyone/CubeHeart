@@ -31,6 +31,7 @@ namespace DLAM
         private LineRenderer _line;
         private PassNode _passnode;
         private PlayerNode _playerNode;
+        private WallEndNode _wallEndNode;
         private List<ElectRobot> _robotlist = new List<ElectRobot>();
         private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
@@ -46,18 +47,18 @@ namespace DLAM
             _homepage = Object.Instantiate(Res.HomePage);
         }
         
-        public void LoadGame(Vector3 vector)
+        public void LoadGame()
         {
             _game = Object.Instantiate(Res.Levels[_data.level]);
-            _game.transform.position = vector;
+            _game.transform.position = GameConfig.StartPos[_data.level];
             _gamedic[_data.level] = _game;
             _robots = _game.GetComponentsInChildren<ElectRobot>();
-            _player = _game.GetComponentInChildren<Player>();
             _endnode = _game.GetComponentInChildren<EndNode>();
             _startnode = _game.GetComponentInChildren<StartNode>();
             _line = _game.GetComponentInChildren<LineRenderer>();
             _passnode = _game.GetComponentInChildren<PassNode>();
             _playerNode = _game.GetComponentInChildren<PlayerNode>();
+            _wallEndNode = _game.GetComponentInChildren<WallEndNode>();
         }
 
         public void RemoveLastGame()
@@ -78,7 +79,9 @@ namespace DLAM
         public void StartGame()
         {
             GameConfig.GameProgression = GameProgression.GameIng;
-            _player.StartGame();
+            _player?.StartGame();
+            _wallEndNode?.StartGame();
+            GravityPresenter.Instance.UpdateGravity();
         }
 
         private void UpdateGame()
@@ -204,9 +207,22 @@ namespace DLAM
 
         public void ResetGame()
         {
+            foreach (var item in _gamedic.Keys)
+            {
+                Object.Destroy(_gamedic[item]);
+            }
+            _gamedic.Clear();
             if(_game)Object.Destroy(_game);
             if(_homepage)Object.Destroy(_homepage);
+            if(_player)Object.Destroy(_player.gameObject);
+            _player = null;
             _robots = null;
+        }
+
+        public void EndGame()
+        {
+            GameConfig.GameProgression = GameProgression.Stop;
+            _player.EndGame();
         }
     }
 }

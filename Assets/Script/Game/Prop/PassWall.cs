@@ -17,7 +17,7 @@ namespace DLAM
         {
             if (col.transform.tag == "Player")
             {
-                _sprite.DOFade(0, 1);
+                _sprite.DOFade(0, 0.2f);
             }
         }
 

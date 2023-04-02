@@ -1,27 +1,67 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DLBASE;
 using UnityEngine;
 
-public class RobotNode : MonoBehaviour
+namespace DLAM
 {
-    public ElectRobot _robot;
-    
-    public void OnTriggerEnter2D(Collider2D col)
+    public class RobotNode : MonoBehaviour
     {
-        if (col.tag == "RobotTrigger")
-        {
-            if (_robot.Iseleck)
-            {
+        public GravityDir _dir = GravityDir.Down;
+        private bool _isplayer;
+        private bool _isclick = true;
 
+        public void FixedUpdate()
+        {
+            if ((Input.GetKey(KeyCode.Space)||TouchPresenter.Instance.OpenSkill)&&_isplayer&&_isclick)
+            {
+                _isclick = false;
+                if (_dir == GravityDir.Down)
+                {
+                    _dir = GravityDir.Up;
+                }else if (_dir == GravityDir.Up)
+                {
+                    _dir = GravityDir.Down;
+                }
+                else if (_dir == GravityDir.Left)
+                {
+                    _dir = GravityDir.Right;
+                }else if (_dir == GravityDir.Right)
+                {
+                    _dir = GravityDir.Left;
+                }
+                GravityPresenter.Instance.SetRobotGravity(_dir);
+                StartCoroutine(Wait(0.3f));
             }
         }
-    }
 
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "RobotTrigger")
+        private IEnumerator Wait(float time)
         {
+            yield return new WaitForSeconds(time);
+            _isclick = true;
+        }
+
+        public void OnTriggerEnter2D(Collider2D other)
+        {
+            if(other.gameObject.tag== "Player")
+            {
+                _isplayer = true;
+            }
+        }
+
+        public void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                _isplayer = false;
+            }
+        }
+
+        public void OnDestroy()
+        {
+            DLPlayer.lisioner.Remove(this);
         }
     }
 }
+
