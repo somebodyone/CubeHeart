@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
@@ -8,9 +8,9 @@ namespace DLAM
 {
     public class PassNode : MonoBehaviour,LinkInterface
     {
+        public GravityDir _dir = GravityDir.Down;
         public Vector3 _nextlevelpos;
-        public List<Transform> _pos;
-        public List<float> _time;
+        public GameObject _wall;
 
         public GameObject _light;
         
@@ -22,26 +22,10 @@ namespace DLAM
                 GameManager.Instance.LoadGame(_nextlevelpos);
                 Player player = col.GetComponent<Player>();
                 player.EndGame();
-                int count = 0;
-                Move(player, count);
+                GravityPresenter.Instance.SetGravity(_dir);
+                _wall.SetActive(false);
             }
         }
-        
-        private void Move(Player target,int count)
-        {
-            target.transform.DOMove(_pos[count].position, _time[count]).SetEase(Ease.Linear).OnComplete(() =>
-            {
-                count++;
-                if (count > _pos.Count - 1)
-                {
-                    target.StartGame();
-                    GameManager.Instance.RemoveLastGame();
-                    return;
-                }
-                Move(target, count);
-            });
-        }
-
         public void Link()
         {
             _light.SetActive(true);

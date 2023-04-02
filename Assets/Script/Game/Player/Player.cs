@@ -212,8 +212,9 @@ namespace DLAM
         public void EndGame()
         {
             _ispause = true;
-            _rigidbody.isKinematic = true;
-            _boxCollider.enabled = false;
+            _animation.animation.Play("idle");
+            // _rigidbody.isKinematic = true;
+            // _boxCollider.enabled = false;
             _rigidbody.velocity = Vector3.zero;
         }
 
