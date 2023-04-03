@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DLAM
 {
-    public class ElectLadder : MonoBehaviour,LinkInterface
+    public class ElectLadder : LinkNode
     {
         public SpriteRenderer _light;
         public GameObject _lightnode;
@@ -21,13 +21,13 @@ namespace DLAM
             }
         }
 
-        public void Link()
+        public override void Link()
         {
             _light.color = Color.white;
             _lightnode.SetActive(true);
         }
 
-        public void Disconnect()
+        public override void Disconnect()
         {
             _light.color = Color.gray;
             _lightnode.SetActive(false);

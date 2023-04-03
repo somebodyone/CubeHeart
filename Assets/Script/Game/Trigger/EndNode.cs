@@ -2,16 +2,16 @@ using UnityEngine;
 
 namespace DLAM
 {
-    public class EndNode:MonoBehaviour,LinkInterface
+    public class EndNode:LinkNode
     {
         public SpriteRenderer _light;
         private bool islink = false;
-        public void Link()
+        public override void Link()
         {
             _light.color = Color.white;
         }
 
-        public void Disconnect()
+        public override void Disconnect()
         {
             _light.color = Color.gray;
         }

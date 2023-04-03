@@ -13,17 +13,15 @@ namespace DLAM
         Row//竖
     }
     
-    public class ElectRobot : MonoBehaviour, LinkInterface
+    public class ElectRobot : LinkNode
     {
         public RobotDir _robotdir = RobotDir.Row;
         public int _dir = -1;
         public Transform _effect;
-        public Transform start;
         private bool _electtric; //是否有电
         private UnityArmatureComponent _animation;
         private Rigidbody2D _rigidbody;
         private float _gravity => GravityPresenter.Instance.GetRobotGravity();
-        private GravityDir _gravitydir => GravityPresenter.Instance.GetRobotDir();
 
         public void Start()
         {

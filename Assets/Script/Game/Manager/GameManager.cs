@@ -32,7 +32,7 @@ namespace DLAM
         private PassNode _passnode;
         private PlayerNode _playerNode;
         private WallEndNode _wallEndNode;
-        private List<ElectRobot> _robotlist = new List<ElectRobot>();
+        private List<LinkNode> _robotlist = new List<LinkNode>();
         private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
 
@@ -90,7 +90,7 @@ namespace DLAM
             _robotlist.Clear();
             _nodelist.Clear();
             _nodelist.Add(_startnode.transform);
-            LineRobotNode(_startnode.transform);
+            LineRobotNode(_startnode);
             LineEndNode();
             if (_nodelist.Count > 1)
             {
@@ -132,6 +132,27 @@ namespace DLAM
         }
 
         /// <summary>
+        /// 射线检测
+        /// </summary>
+        private bool IsRaycast(Vector3 start,Vector3 end,float distance)
+        {
+            Vector3 dir = Vector3.Normalize(end - start);
+            int layerMask =1 << 9;
+            RaycastHit2D info = Physics2D.Raycast( start, dir, 1,layerMask);
+            if(info.collider!=null){
+                Debug.DrawLine(start, end, Color.green); 
+                Debug.Log(info.collider.name+"++++++++++++++++++++++");
+                if(info.transform.gameObject.CompareTag("Wall")){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }
+
+        /// <summary>
         /// 链接最终节点
         /// </summary>
         private void LineEndNode()
@@ -140,6 +161,7 @@ namespace DLAM
             if (_robots.Length <= 0)
             {
                 distance = Vector3.Distance(_startnode.transform.position, _endnode.transform.position);
+                if(IsRaycast(_startnode.end.position, _endnode.end.position,distance))return;
                 if (distance < 10)
                 {
                     _nodelist.Add(_endnode.transform);
@@ -157,7 +179,8 @@ namespace DLAM
                 _passnode.Disconnect();
                 return;
             }
-            distance = Vector3.Distance(_robotlist[_robotlist.Count-1].transform.position, _endnode.transform.position);
+            if(IsRaycast(_robotlist[_robotlist.Count-1].end.position, _endnode.end.position,distance))return;
+            distance = Vector3.Distance(_robotlist[_robotlist.Count-1].end.position, _endnode.transform.position);
             if (distance < 10)
             {
                 _nodelist.Add(_endnode.transform);
@@ -169,18 +192,21 @@ namespace DLAM
             }
         }
 
-        private void LineRobotNode(Transform startnode)
+        private void LineRobotNode(LinkNode startnode)
         {
             float mindistance = 10;
             ElectRobot node = null;
             for (int i = 0; i < _robots.Length; i++)
             {
                 if(IsHaveNode(_robots[i]))continue;
-                float distance = Vector3.Distance(_robots[i].transform.position, startnode.position);
+                float distance = Vector3.Distance(_robots[i].end.position, startnode.end.position);
                 if (distance < mindistance)
                 {
-                    mindistance = distance;
-                    node = _robots[i];
+                    if(!IsRaycast( startnode.end.position,_robots[i].end.position,distance))
+                    {
+                        mindistance = distance;
+                        node = _robots[i]; 
+                    }
                 }
             }
 
@@ -188,7 +214,7 @@ namespace DLAM
             {
                 _robotlist.Add(node);
                 _nodelist.Add(node.transform);
-                LineRobotNode(node.transform);
+                LineRobotNode(node);
             }
         }
 

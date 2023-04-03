@@ -7,7 +7,7 @@ using DLBASE;
 
 namespace DLAM
 {
-    public class PassNode : MonoBehaviour,LinkInterface
+    public class PassNode : LinkNode
     {
         public GravityDir _dir = GravityDir.Up;
         public Vector3 _nextlevelpos;
@@ -34,12 +34,12 @@ namespace DLAM
                 _boxCollider.enabled = false;
             }
         }
-        public void Link()
+        public override void Link()
         {
             _light.SetActive(true);
         }
 
-        public void Disconnect()
+        public override void Disconnect()
         {
             _light.SetActive(false);
         }

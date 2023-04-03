@@ -5,25 +5,24 @@ using UnityEngine;
 
 namespace DLAM
 {
-    public class StartNode : MonoBehaviour,LinkInterface
+    public class StartNode : LinkNode
     {
-        public Transform _start;
         public Transform _endnode;
         public void Update()
         {
             if (_endnode != null)
             {
-                float angle = GameUtlis.Angle(_start.position, _endnode.position);
-                _start.localEulerAngles = new Vector3(0, 0, angle);
+                float angle = GameUtlis.Angle(start.position, _endnode.position);
+                start.localEulerAngles = new Vector3(0, 0, angle);
             }
         }
         
-        public void Link()
+        public override void Link()
         {
             
         }
 
-        public void Disconnect()
+        public override void Disconnect()
         {
             
         }
