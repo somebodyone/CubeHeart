@@ -12,6 +12,7 @@ namespace DLAM
             {
                 GameManager.Instance.ResetGame();
                 GameManager.Instance.LoadGame();
+                GravityPresenter.Instance.ResetGravity();
                 GameManager.Instance.LoadPlayer();
                 GameManager.Instance.StartGame();
             }

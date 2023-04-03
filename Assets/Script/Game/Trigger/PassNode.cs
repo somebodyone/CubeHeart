@@ -27,6 +27,7 @@ namespace DLAM
             {
                 GamePresenter.Instance.SetNextLevel();
                 GameManager.Instance.LoadGame();
+                GravityPresenter.Instance.ResetGravity();
                 GameManager.Instance.EndGame();
                 GravityPresenter.Instance.SetGravity(_dir);
                 _wall.SetActive(false);

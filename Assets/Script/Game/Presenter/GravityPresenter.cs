@@ -36,7 +36,7 @@ namespace DLAM
         }
 
         private Vector3 _gravity = new Vector3(0, -10, 0);
-        public Vector3 _robotgravity = new Vector3(0, -10, 0);
+        public float _robotgravity = -10;
         private GravityDir _dir = GravityDir.Down;
         private GravityDir _robotdir = GravityDir.Down;
 
@@ -44,6 +44,13 @@ namespace DLAM
         public override void OnInit()
         {
             
+        }
+
+        public void ResetGravity()
+        {
+            _gravity = new Vector3(0, -10, 0);
+            _robotgravity = -10;
+            UpdateGravity();
         }
 
         public void UpdateGravity()
@@ -58,16 +65,16 @@ namespace DLAM
             switch (_robotdir)
             {
                 case GravityDir.Down:
-                    _robotgravity = new Vector3(0, -10, 0);
+                    _robotgravity = -10;
                     break;
                 case GravityDir.Up:
-                    _robotgravity = new Vector3(0, 10, 0);
+                    _robotgravity = 10;
                     break;
                 case GravityDir.Left:
-                    _robotgravity = new Vector3(-10, 0, 0);
+                    _robotgravity = -10;
                     break;
                 case GravityDir.Right:
-                    _robotgravity = new Vector3(10, 0, 0);
+                    _robotgravity = 10;
                     break;
             }
             lisioner.Emit(EventType.UpdateRobotGravity);
@@ -93,7 +100,7 @@ namespace DLAM
             lisioner.Emit(EventType.UpdateGravity);
         }
 
-        public Vector3 GetRobotGravity()
+        public float GetRobotGravity()
         {
             return _robotgravity;
         }
