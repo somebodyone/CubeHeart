@@ -12,7 +12,6 @@ namespace DLAM
         public GravityDir _dir = GravityDir.Up;
         public Vector3 _nextlevelpos;
         public GameObject _wall;
-
         public GameObject _light;
         private BoxCollider2D _boxCollider;
 
@@ -37,11 +36,13 @@ namespace DLAM
         public override void Link()
         {
             _light.SetActive(true);
+            _boxCollider.enabled = true;
         }
 
         public override void Disconnect()
         {
             _light.SetActive(false);
+            _boxCollider.enabled = false;
         }
     }
 }

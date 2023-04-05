@@ -35,6 +35,7 @@ namespace DLAM
         private List<LinkNode> _robotlist = new List<LinkNode>();
         private List<Transform> _nodelist = new List<Transform>();
         private GameData _data => GamePresenter.Instance.GetData();
+        private float _distance = 11;
 
         public void CheckInit()
         {
@@ -162,7 +163,7 @@ namespace DLAM
             {
                 distance = Vector3.Distance(_startnode.transform.position, _endnode.transform.position);
                 if(IsRaycast(_startnode.end.position, _endnode.end.position,distance))return;
-                if (distance < 10)
+                if (distance < _distance)
                 {
                     _nodelist.Add(_endnode.transform);
                 }
@@ -181,7 +182,7 @@ namespace DLAM
             }
             if(IsRaycast(_robotlist[_robotlist.Count-1].end.position, _endnode.end.position,distance))return;
             distance = Vector3.Distance(_robotlist[_robotlist.Count-1].end.position, _endnode.transform.position);
-            if (distance < 10)
+            if (distance < _distance)
             {
                 _nodelist.Add(_endnode.transform);
             }
@@ -194,7 +195,7 @@ namespace DLAM
 
         private void LineRobotNode(LinkNode startnode)
         {
-            float mindistance = 10;
+            float mindistance = _distance;
             ElectRobot node = null;
             for (int i = 0; i < _robots.Length; i++)
             {
