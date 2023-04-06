@@ -100,6 +100,7 @@ namespace DLAM
             else
             {
                 _startnode._endnode = null;
+                return;
             }
             for (int i = 0; i < _robots.Length; i++)
             {
@@ -139,7 +140,7 @@ namespace DLAM
         {
             Vector3 dir = Vector3.Normalize(end - start);
             int layerMask =1 << 9;
-            RaycastHit2D info = Physics2D.Raycast( start, dir, 1,layerMask);
+            RaycastHit2D info = Physics2D.Raycast( start, dir, distance,layerMask);
             if(info.collider!=null){
                 Debug.DrawLine(start, end, Color.green); 
                 Debug.Log(info.collider.name+"++++++++++++++++++++++");

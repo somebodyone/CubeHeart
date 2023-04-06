@@ -207,6 +207,10 @@ namespace DLAM
             }
 
             _isground = GameUtlis.RayCastTarget(transform.position, vector);
+            // if (!_isground)
+            // {
+            //     _animation.animation.Play("idle");
+            // }
         }
 
         public void EndGame()
