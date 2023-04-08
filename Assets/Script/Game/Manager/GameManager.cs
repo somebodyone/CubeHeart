@@ -99,7 +99,12 @@ namespace DLAM
             }
             else
             {
+                _line.positionCount = 0;
                 _startnode._endnode = null;
+                for (int i = 0; i < _robots.Length; i++)
+                {
+                    _robots[i].Disconnect();
+                }
                 return;
             }
             for (int i = 0; i < _robots.Length; i++)

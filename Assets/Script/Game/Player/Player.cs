@@ -186,6 +186,7 @@ namespace DLAM
             Vector3 pos = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
             Camera.main.transform.DOMove(pos, 0.1f);
         }
+
         private void UpdateGround()
         {
             GravityDir dir = GravityPresenter.Instance.GetDir();
@@ -205,12 +206,8 @@ namespace DLAM
                     vector = Vector3.right;
                     break;
             }
-
+            
             _isground = GameUtlis.RayCastTarget(transform.position, vector);
-            // if (!_isground)
-            // {
-            //     _animation.animation.Play("idle");
-            // }
         }
 
         public void EndGame()
