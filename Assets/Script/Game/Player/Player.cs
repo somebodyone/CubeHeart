@@ -4,7 +4,7 @@ using DG.Tweening;
 using DLBASE;
 using DragonBones;
 using UnityEngine;
-using Transform = DragonBones.Transform;
+using Transform = UnityEngine.Transform;
 
 namespace DLAM
 {
@@ -17,8 +17,9 @@ namespace DLAM
     
     public class Player : MonoBehaviour
     {
-        public float _start;
-
+        public Transform _left;
+        public Transform _mid;
+        public Transform _right;
         private Rigidbody2D _rigidbody;
         private BoxCollider2D _boxCollider;
         private UnityArmatureComponent _animation;
@@ -28,7 +29,7 @@ namespace DLAM
         private int _dir = 1;
         private float _speedscale = 1.4f;
         private bool _isground;
-        private bool _ispause = true;
+        public bool _ispause = true;
         private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
         private Vector3 _gravity => GravityPresenter.Instance.GetGravity();
 
@@ -133,35 +134,80 @@ namespace DLAM
                 Vector3 speed = GetSpeed(KeyCode.D);
                 if(Input.GetKey(KeyCode.W))
                 {
-                    speed = GetSpeed(KeyCode.D) + GetSpeed(KeyCode.W)*_speedscale;
+                    if (_gravitydir == GravityDir.Down || _gravitydir == GravityDir.Up)
+                    {
+                        speed = GetSpeed(KeyCode.D) + GetSpeed(KeyCode.W)*_speedscale;
+                    }
+                    else
+                    {
+                        speed = GetSpeed(KeyCode.D)*_speedscale + GetSpeed(KeyCode.W);
+                    }
                 }
                 else if(Input.GetKey(KeyCode.S))
                 {
-                    speed = GetSpeed(KeyCode.D) + GetSpeed(KeyCode.S)*_speedscale;
+                    if (_gravitydir == GravityDir.Down || _gravitydir == GravityDir.Up)
+                    {
+                        speed = GetSpeed(KeyCode.D) + GetSpeed(KeyCode.S)*_speedscale;
+                    }
+                    else
+                    {
+                        speed = GetSpeed(KeyCode.D)*_speedscale + GetSpeed(KeyCode.S);
+                    }
+
                 }
                 Move(speed,1);
             }
             else if(Input.GetKey(KeyCode.A))
             {
-                
                 Vector3 speed = GetSpeed(KeyCode.A);
                 if(Input.GetKey(KeyCode.W))
                 {
-                    speed = GetSpeed(KeyCode.A) + GetSpeed(KeyCode.W)*_speedscale;
+                    if (_gravitydir == GravityDir.Down || _gravitydir == GravityDir.Up)
+                    {
+                        speed = GetSpeed(KeyCode.A) + GetSpeed(KeyCode.W)*_speedscale;
+                    }
+                    else
+                    {
+                        speed = GetSpeed(KeyCode.A)*_speedscale + GetSpeed(KeyCode.W);
+                    }
                 }
                 else if(Input.GetKey(KeyCode.S))
                 {
-                    speed = GetSpeed(KeyCode.A) + GetSpeed(KeyCode.S)*_speedscale;
+                    if (_gravitydir == GravityDir.Down || _gravitydir == GravityDir.Up)
+                    {
+                        speed = GetSpeed(KeyCode.A) + GetSpeed(KeyCode.S)*_speedscale;
+                    }
+                    else
+                    {
+                        speed = GetSpeed(KeyCode.A)*_speedscale + GetSpeed(KeyCode.S);
+                    }
                 }
                 Move(speed,-1);
-            }else if(Input.GetKey(KeyCode.W))
+            }
+            else if(Input.GetKey(KeyCode.W))
             {
-                Vector3 speed = GetSpeed(KeyCode.W)*_speedscale;
+                Vector3 speed = GetSpeed(KeyCode.W);
+                if(Input.GetKey(KeyCode.A))
+                {
+                    speed = GetSpeed(KeyCode.W)*_speedscale + GetSpeed(KeyCode.A);
+                }
+                else if(Input.GetKey(KeyCode.D))
+                {
+                    speed = GetSpeed(KeyCode.W)*_speedscale + GetSpeed(KeyCode.D);
+                }
                 Move(speed,-1);
             }
             else if(Input.GetKey(KeyCode.S))
             {
-                Vector3 speed = GetSpeed(KeyCode.S)*_speedscale;
+                Vector3 speed = GetSpeed(KeyCode.S);
+                if(Input.GetKey(KeyCode.A))
+                {
+                    speed = GetSpeed(KeyCode.S)*_speedscale + GetSpeed(KeyCode.A);
+                }
+                else if(Input.GetKey(KeyCode.D))
+                {
+                    speed = GetSpeed(KeyCode.S)*_speedscale + GetSpeed(KeyCode.D);
+                }
                 Move(speed,1);
             }
             else
@@ -187,27 +233,41 @@ namespace DLAM
             Camera.main.transform.DOMove(pos, 0.1f);
         }
 
+        private float _scale = 2;
         private void UpdateGround()
         {
             GravityDir dir = GravityPresenter.Instance.GetDir();
-            Vector3 vector = Vector3.down;
+            Vector3 leftpos = _left.position;
+            Vector3 rightpos = _right.position;
+            Vector3 midpos = _mid.position;
             switch (dir)
             {
                 case GravityDir.Down:
-                    vector = Vector3.down;
+                    leftpos += Vector3.down*_scale;
+                    rightpos += Vector3.down*_scale;
+                    midpos += Vector3.down*_scale;
                     break;
                 case GravityDir.Up:
-                    vector = Vector3.up;
+                    leftpos += Vector3.up*_scale;
+                    rightpos += Vector3.up*_scale;
+                    midpos += Vector3.up*_scale;
                     break;
                 case GravityDir.Left:
-                    vector = Vector3.left;
+                    leftpos += Vector3.left*_scale;
+                    rightpos += Vector3.left*_scale;
+                    midpos += Vector3.left*_scale;
                     break;
                 case GravityDir.Right:
-                    vector = Vector3.right;
+                    leftpos += Vector3.right*_scale;
+                    rightpos += Vector3.right*_scale;
+                    midpos += Vector3.right*_scale;
                     break;
             }
             
-            _isground = GameUtlis.RayCastTarget(transform.position, vector);
+           bool left = GameUtlis.IsRaycast(_left.position,leftpos,0.5f);
+           bool mid = GameUtlis.IsRaycast(_mid.position,midpos,0.5f);
+           bool right = GameUtlis.IsRaycast(_right.position,rightpos,0.5f);
+           _isground = left || mid || right;
         }
 
         public void EndGame()

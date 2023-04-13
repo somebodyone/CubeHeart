@@ -130,12 +130,33 @@ namespace DLBASE
         /// <summary>
         /// 射线检测
         /// </summary>
+        public static bool IsRaycast(Vector3 start,Vector3 end,float distance)
+        {
+            Vector3 dir = Vector3.Normalize(end - start);
+            int layerMask =(1 << 9) | (1 << 8);
+            RaycastHit2D info = Physics2D.Raycast( start, dir, distance,layerMask);
+            if(info.collider!=null){
+                Debug.DrawLine(start, end, Color.green);
+                if(info.transform.gameObject.CompareTag("Wall")||info.transform.gameObject.CompareTag("Box")||info.transform.gameObject.CompareTag("Robot")){
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
+                return false;
+            }
+        }
+        
+        /// <summary>
+        /// 射线检测
+        /// </summary>
         /// <param name="start"></param>
         /// <returns></returns>
         public static bool RayCastTarget(Vector3 start,Vector3 dir)
         {
             int layerMask =(1 << 9) | (1 << 8);
             RaycastHit2D info = Physics2D.Raycast( start, dir, 0.5f,layerMask);
+            Debug.DrawLine(start,dir*10);
             if(info.collider!=null){
                 if(info.transform.gameObject.CompareTag("Wall")||info.transform.gameObject.CompareTag("Box")||info.transform.gameObject.CompareTag("Robot")){
                     return true;
