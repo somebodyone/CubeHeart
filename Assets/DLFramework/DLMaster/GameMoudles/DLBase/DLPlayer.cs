@@ -39,11 +39,13 @@ namespace DLBASE
         }
 
         private static DLBase _base;
+        public static Timer timer;
         public static Lisioner lisioner = new Lisioner();
 
         public static void CheckInit()
         {
             GameObject go = new GameObject();
+            timer = new Timer();
             go.name = "DLPlayer";
             go.AddComponent<DLBase>();
             _base = go.GetComponent<DLBase>();

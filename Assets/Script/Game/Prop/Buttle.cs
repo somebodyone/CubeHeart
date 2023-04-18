@@ -22,6 +22,13 @@ namespace DLAM
                 Destroy(gameObject);
             }
         }
-        
+
+        public void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.tag == "Player"||col.gameObject.tag == "Wall")
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

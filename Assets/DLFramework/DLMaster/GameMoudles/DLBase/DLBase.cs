@@ -23,6 +23,7 @@ namespace DLBASE
         public void Update()
         {
             DLPlayer.lisioner.Emit(DLPlayer.EventType.Update);
+            DLPlayer.timer.UpdateTimer(Time.deltaTime);
         }
         public void FixedUpdate()
         {

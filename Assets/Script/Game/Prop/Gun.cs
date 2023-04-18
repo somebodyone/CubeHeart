@@ -9,7 +9,7 @@ namespace DLAM
         private string _buttle = "Perfabs/Game/Bullet";
         public int _dir=-1;
         public float _speed = 1;
-        private float[] _timeconfig = {5, 5, 5,100};
+        private float[] _timeconfig = {20, 20, 20,1000};
         private float _currenttime = 0;
         private int _id = 0;
 

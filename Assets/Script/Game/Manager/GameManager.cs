@@ -50,7 +50,7 @@ namespace DLAM
         
         public void LoadGame()
         {
-            _game = Object.Instantiate(Res.Levels[_data.level]);
+            _game = Object.Instantiate(Resources.Load<GameObject>("Perfabs/Level/Level_"+(_data.level+1)));
             _game.transform.position = GameConfig.StartPos[_data.level];
             _gamedic[_data.level] = _game;
             _robots = _game.GetComponentsInChildren<ElectRobot>();

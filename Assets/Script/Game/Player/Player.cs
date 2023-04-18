@@ -20,6 +20,7 @@ namespace DLAM
         public Transform _left;
         public Transform _mid;
         public Transform _right;
+        public Transform _smoke;
         private Rigidbody2D _rigidbody;
         private BoxCollider2D _boxCollider;
         private UnityArmatureComponent _animation;
@@ -30,6 +31,7 @@ namespace DLAM
         private float _speedscale = 1.4f;
         private bool _isground;
         public bool _ispause = true;
+        private ListenerDelegate<EventObject> _dbDelegate;
         private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
         private Vector3 _gravity => GravityPresenter.Instance.GetGravity();
 
@@ -37,6 +39,7 @@ namespace DLAM
         {
             _animation = transform.GetComponentInChildren<UnityArmatureComponent>();
             _animation.animation.Play("idle");
+            _animation.AddEventListener(EventObject.SOUND_EVENT, SoundEventCallback);
             _animationtype = PlayerAnimationType.Idle;
             GravityPresenter.Instance.lisioner.UpdateGravity(this,() =>
             {
@@ -123,6 +126,16 @@ namespace DLAM
                 transform.localScale = new Vector3(dir*_dir*_x, _x, _x);
             }
         }
+
+        private void SoundEventCallback(string type, EventObject eventobject)
+        {
+            if (_isground)
+            {
+                DLAudioManager.Instance.PlayAudio("Audio/walks");
+                EffectManager.Instance.CreatRunEffect(_smoke.position);  
+            }
+        }
+
         public void Update()
         {
             if(_ispause)return;
