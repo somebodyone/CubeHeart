@@ -7,6 +7,7 @@ namespace DLBASE
     {
         public GComponent contentPlane;
         protected GGraph mask;
+        protected virtual bool _showmask => true;
         
         public abstract void OnInit();
         public void SetContentWith(string pakege, string name)
@@ -18,11 +19,14 @@ namespace DLBASE
 
         public virtual void Init()
         {
-            mask = new GGraph();
-            mask.color = Color.black;
-            mask.height = Screen.height;
-            mask.width = Screen.width;
-            GRoot.inst.AddChild(mask);
+            if (_showmask)
+            {
+                mask = new GGraph();
+                mask.color = Color.black;
+                mask.height = Screen.height;
+                mask.width = Screen.width;
+                GRoot.inst.AddChild(mask);
+            }
             InitData();
             InitCompent();
             InitAddlistioner();
@@ -45,8 +49,8 @@ namespace DLBASE
 
         public virtual void Close()
         {
-            mask.Dispose();
-            contentPlane.Dispose();
+            mask?.Dispose();
+            contentPlane?.Dispose();
         }
     }
 }

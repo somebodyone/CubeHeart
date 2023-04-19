@@ -22,7 +22,7 @@ namespace DLAM
         }
         public Lisioner lisioner = new Lisioner();
         private GameObject _game;
-        public Dictionary<int, GameObject> _gamedic = new Dictionary<int, GameObject>();
+        private Dictionary<int, GameObject> _gamedic = new Dictionary<int, GameObject>();
         private GameObject _homepage;
         private ElectRobot[] _robots;
         private Player _player;
@@ -250,6 +250,11 @@ namespace DLAM
             if(_player)Object.Destroy(_player.gameObject);
             _player = null;
             _robots = null;
+        }
+
+        public void PlayerDie()
+        {
+            _player.Die();
         }
 
         public void EndGame()

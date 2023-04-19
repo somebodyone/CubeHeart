@@ -30,6 +30,7 @@ namespace DLAM
         private int _dir = 1;
         private float _speedscale = 1.4f;
         private bool _isground;
+        private CameraNode _cameraNode;
         public bool _ispause = true;
         private ListenerDelegate<EventObject> _dbDelegate;
         private GravityDir _gravitydir => GravityPresenter.Instance.GetDir();
@@ -37,6 +38,7 @@ namespace DLAM
 
         public void Start()
         {
+            _cameraNode = GameObject.Find("CameraNode").GetComponent<CameraNode>();
             _animation = transform.GetComponentInChildren<UnityArmatureComponent>();
             _animation.animation.Play("idle");
             _animation.AddEventListener(EventObject.SOUND_EVENT, SoundEventCallback);
@@ -131,7 +133,7 @@ namespace DLAM
         {
             if (_isground)
             {
-                DLAudioManager.Instance.PlayAudio("Audio/walks");
+                DLAudioManager.Instance.PlayAudio("Audio/walk");
                 EffectManager.Instance.CreatRunEffect(_smoke.position);  
             }
         }
@@ -242,8 +244,8 @@ namespace DLAM
         private Vector3 _oldpos;
         public  void LateUpdate()
         {
-            Vector3 pos = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
-            Camera.main.transform.DOMove(pos, 0.1f);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, _cameraNode.transform.position.z);
+            _cameraNode.transform.DOMove(pos, 0.1f);
         }
 
         private float _scale = 2;
@@ -296,7 +298,12 @@ namespace DLAM
         {
             set => transform.position = value;
         }
-        
+
+
+        public void Die()
+        {
+            Destroy(gameObject);
+        }
         public void OnDestroy()
         {
             GravityPresenter.Instance.lisioner.Remove(this);

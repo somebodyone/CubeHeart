@@ -1,4 +1,5 @@
 ﻿
+using DLBASE;
 using UnityEngine;
 
 namespace DLAM
@@ -10,11 +11,15 @@ namespace DLAM
         {
             if (col.transform.tag == "Player")
             {
-                GameManager.Instance.ResetGame();
-                GameManager.Instance.LoadGame();
-                GravityPresenter.Instance.ResetGravity();
-                GameManager.Instance.LoadPlayer();
-                GameManager.Instance.StartGame();
+                GameManager.Instance.PlayerDie();
+                Vector3 pos = col.transform.position;
+                EffectManager.Instance.CreatDieEffect(pos);
+                DLDialogManager.Instance.OpenView<TransitionView>();
+                // GameManager.Instance.ResetGame();
+                // GameManager.Instance.LoadGame();
+                // GravityPresenter.Instance.ResetGravity();
+                // GameManager.Instance.LoadPlayer();
+                // GameManager.Instance.StartGame();
             }
         }
     }
